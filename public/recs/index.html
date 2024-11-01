@@ -34,16 +34,7 @@
 
 <article>
   <h2><a href="/recs/sites/">Sites</a></h2>
-  <p>Websites of interest.</p>
-<h2 id="blogs--essays">Blogs / Essays</h2>
-<ul>
-<li><a href="https://paulgraham.com/articles.html">Paul Graham&rsquo;s Essays</a></li>
-<li><a href="https://patrickcollison.com/">Patrick Collison&rsquo;s Site</a></li>
-</ul>
-<h2 id="misc">Misc.</h2>
-<ul>
-<li><a href="https://jfly.uni-koeln.de/color/">A good categorical palate</a></li>
-</ul>
+  &hellip;from around the world wide web&hellip;
 </article>
 
 <article>
@@ -70,5 +61,16 @@
         <a href="/recs">Recommendations</a>
       </div>
     </nav>
+    <script>
+      
+      let resizeTimer;
+      window.addEventListener("resize", () => {
+        document.body.classList.add("resizing");
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          document.body.classList.remove("resizing");
+        }, 400); 
+      });
+    </script>
   </body>
 </html>

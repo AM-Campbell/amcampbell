@@ -20,6 +20,11 @@
   --mono-font: "Computer Modern Typewriter", monospace;
 }
 
+/* Add this at the top of your CSS */
+body.resizing .menu {
+  transition: none !important;
+}
+
 *,
 html {
   margin: 0;
@@ -44,12 +49,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-}
-
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 12px;
-  }
 }
 
 p {
@@ -266,6 +265,53 @@ button:hover {
   opacity: 0.9;
 }
 
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    /* Add to your existing header styles */
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-top: 0;
+    letter-spacing: 0.02em; /* Slight tracking for uppercase */
+  }
+
+  h2 {
+    font-size: 1.6em;
+    letter-spacing: 0.02em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+    letter-spacing: 0.01em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+    letter-spacing: 0.01em;
+  }
+
+  h5,
+  h6 {
+    font-size: 1em;
+    letter-spacing: 0.01em;
+  }
+}
+
 /* Print styles */
 @media print {
   html {
@@ -316,11 +362,6 @@ button:hover {
   transition: 0.3s;
 }
 
-/* Show the menu when checkbox is checked */
-#menu-toggle:checked ~ .menu {
-  transform: translateY(0);
-}
-
 /* Styling for menu links */
 .menu a {
   color: var(--background);
@@ -332,7 +373,6 @@ button:hover {
 /* Transform to "X" when menu is open */
 #menu-toggle:checked + .hamburger .bar1 {
   transform: translate(0px, 10.5px) rotate(45deg);
-  /* transform: rotate(45deg); */
   background-color: var(--background);
 }
 
@@ -353,21 +393,27 @@ button:hover {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.9);
-  display: none; /* Hide by default on small screens */
+  display: flex; /* Change from 'none' to 'flex' */
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.3s ease; /* Smooth fade in */
   opacity: 0;
-  transform: translateY(0); /* Reset any translate */
-  outline: none; /* Remove focus outline */
-  -webkit-tap-highlight-color: transparent; /* Remove blue highlight on mobile */
+  visibility: hidden; /* Add this */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Add this */
+  pointer-events: none; /* Add this */
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Show the menu when checkbox is checked */
 #menu-toggle:checked ~ .menu {
-  display: flex; /* Show menu on smaller screens */
-  opacity: 1; /* Fade in */
+  opacity: 1;
+  visibility: visible; /* Add this */
+  pointer-events: auto; /* Add this */
+}
+
+main {
+  min-width: 100%;
 }
 
 /* Large screen layout */
@@ -385,6 +431,7 @@ button:hover {
   }
 
   main {
+    min-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -394,15 +441,16 @@ button:hover {
   .menu {
     height: auto;
     width: fit-content;
-    position: static; /* Reset position */
-    display: flex; /* Show menu as a row */
-    flex-direction: column; /* Horizontal layout */
+    position: static;
+    display: flex;
+    flex-direction: column;
     align-items: end;
     justify-content: center;
-    background: none; /* Remove background */
-    color: #333;
-    opacity: 1; /* Ensure full opacity */
-    transform: none; /* Reset any transform */
+    background: none;
+    opacity: 1;
+    visibility: visible; /* Add this */
+    pointer-events: auto; /* Add this */
+    transition: none; /* Add this to disable transition on desktop */
   }
 
   /* Adjust menu link styles for large screens */

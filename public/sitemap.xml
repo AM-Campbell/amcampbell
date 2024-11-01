@@ -17,12 +17,12 @@
   </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>//localhost:1313/recs/podcasts-and-talks/</loc>
-  </url><url>
     <loc>//localhost:1313/recs/</loc>
   </url><url>
     <loc>//localhost:1313/recs/sites/</loc>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
+  </url><url>
+    <loc>//localhost:1313/recs/podcasts-and-talks/</loc>
   </url>
 </urlset>
