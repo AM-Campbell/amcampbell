@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Essays on amcampbell</title>
+    <link>/essays/</link>
+    <description>Recent content in Essays on amcampbell</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/essays/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>/essays/my-first-post/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>/essays/my-first-post/</guid>
+      <description>&lt;p&gt;This is my first post content.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

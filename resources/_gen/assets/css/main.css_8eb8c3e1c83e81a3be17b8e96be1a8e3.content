@@ -1,0 +1,1 @@
+body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;max-width:45em;margin:0 auto;padding:2em 1em}article+article{margin-top:2em;padding-top:2em;border-top:1px solid #eee}h1,h2,h3{color:#333}a{color:#06c}img{max-width:100%}code{background:#f4f4f4;padding:.2em .4em;border-radius:3px}pre{background:#f4f4f4;padding:1em;overflow-x:auto}

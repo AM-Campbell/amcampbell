@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    {{ $style := resources.Get "css/main.css" | resources.Minify }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+</head>
+<body>
+    <main>
+        {{ block "content" . }}{{ end }}
+    </main>
+    <nav class="site-nav">
+        <ul>
+            <li><a href="/">amcampbell</a></li>
+            <li><a href="/about">About</a></li>
+            <!-- <li><a href="/essays">Essays</a></li> -->
+            <li><a href="/recs">Recommendations</a></li>
+            <!-- Add more links as needed -->
+        </ul>
+    </nav>
+</body>
+</html>

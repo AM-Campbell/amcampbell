@@ -1,0 +1,13 @@
+{{ define "content" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+<!-- <h2>Recent</h2>
+{{ range first 5 ((.Site.GetPage "/essays").Pages.ByDate.Reverse) }}
+<article>
+<h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+<time>{{ .Date.Format "2006-01-02" }}</time>
+{{ .Summary }}
+</article> 
+{{ end }} -->
+{{ end }}

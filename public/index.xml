@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A.M. Campbell on amcampbell</title>
+    <link>/</link>
+    <description>Recent content in A.M. Campbell on amcampbell</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>/essays/my-first-post/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>/essays/my-first-post/</guid>
+      <description>&lt;p&gt;This is my first post content.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/about/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a senior at Dartmouth majoring in math and studying to apply to medical school.&lt;/p&gt;&#xA;&lt;p&gt;Some things I&amp;rsquo;m involved in other that my classes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sustainable Health Lab:&lt;/strong&gt; I&amp;rsquo;m working on a paper with Prof. Inas Khayal. A lot of python.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Crisis Text Line Volunteering:&lt;/strong&gt; I volunteer as a crisis counselor.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Running and Lifting:&lt;/strong&gt; I completed my frist half marathon this fall and am training for a marathon I will run in the spring.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Books</title>
+      <link>/recs/books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/recs/books/</guid>
+      <description>&lt;p&gt;Book recommendations.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;The Art of Doing Science and Engineering&lt;/em&gt; by Richard Hamming&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Poor Charlie&amp;rsquo;s Almanack&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Podcasts and Talks</title>
+      <link>/recs/podcasts-and-talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/recs/podcasts-and-talks/</guid>
+      <description>&lt;p&gt;Under Construction&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sites</title>
+      <link>/recs/sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/recs/sites/</guid>
+      <description>&lt;p&gt;Websites of interest.&lt;/p&gt;&#xA;&lt;h2 id=&#34;blogs--essays&#34;&gt;Blogs / Essays&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://paulgraham.com/articles.html&#34;&gt;Paul Graham&amp;rsquo;s Essays&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://patrickcollison.com/&#34;&gt;Patrick Collison&amp;rsquo;s Site&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;misc&#34;&gt;Misc.&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://jfly.uni-koeln.de/color/&#34;&gt;A good categorical palate&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
