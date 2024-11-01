@@ -1,5 +1,6 @@
 ---
 title: Sites
+summary: "...from around the world wide web..."
 ---
 
 Websites of interest.
