@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recommendations</title>
     
-    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="/css/main.min.css" />
 
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+      onload="renderMathInElement(document.body);"
+    ></script>
+  </head>
+  <body>
     <main>
-        
+      <div class="text-container">
 <h1>Recommendations</h1>
 
 <article>
@@ -45,16 +55,25 @@
 </ul>
 </article>
 
-
+</div>
     </main>
-    <nav class="site-nav">
-        <ul>
-            <li><a href="/">amcampbell</a></li>
-            <li><a href="/about">About</a></li>
-            
-            <li><a href="/recs">Recommendations</a></li>
-            
-        </ul>
+    <nav>
+      
+      <input type="checkbox" id="menu-toggle" />
+
+      
+      <label for="menu-toggle" class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+
+      
+      <div class="menu">
+        <a href="/">amcampbell</a>
+        <a href="/about">About</a>
+        <a href="/recs">Recommendations</a>
+      </div>
     </nav>
-</body>
+  </body>
 </html>

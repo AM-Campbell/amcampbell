@@ -2,6 +2,6 @@
 title: "A.M. Campbell"
 ---
 
-I find that I am consistently referring friends to the same books, articles, writers, and ideas. The primary purpose of this site is to list these materials and to occasionally share my own writing.
+Experience has taught me that certain books, articles, and ideas emerge repeatedly in my conversations with others. To minimize duplication of effort, I will be assembling such materials here.
 
-This site is a work in progress. I'll be working on the [book recommendations](/recs/books) first.
+The site is a working document, and is currently early in its development. Initial effort will focus on book recommendations [book recommendations](/recs/books).

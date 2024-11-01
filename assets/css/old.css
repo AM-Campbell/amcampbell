@@ -1,6 +1,7 @@
-/* Your existing variables and resets */
+/* Import Computer Modern for body text */
+@import url("https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@1.0.0/fonts.css");
+
 :root {
-  /* Variable definitions */
   --text: #222;
   --background: #fffff8; /* Slightly warm white like old paper */
   --accent: #333;
@@ -20,22 +21,15 @@
   --mono-font: "Computer Modern Typewriter", monospace;
 }
 
-*,
-html {
+/* Reset with purpose */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.text-container {
-  max-width: var(--max-width);
-  padding-top: 9em;
-  padding-bottom: 9em;
-}
-
 /* Core typography */
 html {
-  /* Typography styles */
   font-family: var(--body-font);
   font-size: 18px;
   line-height: 1.5;
@@ -46,20 +40,36 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 12px;
-  }
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--top-spacing) 1rem;
+  gap: 4rem; /* Space between content and nav */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Prevents nav from stretching */
 }
 
-p {
-  text-indent: 0;
+main {
+  max-width: var(--max-width);
+}
+
+/* Navigation styles */
+.site-nav {
+  position: fixed; /* Makes nav stick while scrolling */
+  top: var(--top-spacing);
+  padding-top: 0.5rem;
+  right: var(--top-spacing);
+  text-align: right;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  margin-top: 1em;
-  hyphens: auto;
 }
 
-nav a {
+.site-nav a {
   font-family: var(--header-font);
   text-transform: uppercase;
   font-weight: 500;
@@ -67,8 +77,16 @@ nav a {
   font-size: 0.7em;
 }
 
-nav a:hover {
+.site-nav a:hover {
   text-decoration: underline;
+}
+
+/* TeX-style paragraphs with indent and no margin */
+p {
+  text-indent: 0;
+  margin: 0;
+  margin-top: 1em;
+  hyphens: auto;
 }
 
 /* Headings with true geometric sans-serif */
@@ -83,32 +101,6 @@ h6 {
   line-height: 1.1;
   margin: 2rem 0 1rem 0;
   text-transform: uppercase; /* True to Futura's modernist character */
-}
-
-body {
-  width: 100%;
-  margin: 0;
-  padding: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* NAVBAR STYLES */
-nav {
-  position: fixed;
-  top: var(--top-spacing);
-  right: var(--top-spacing);
-  justify-content: flex-end;
-  align-items: center;
-  /* padding: 1rem; */
-}
-
-nav a {
-  color: #333;
-  text-decoration: none;
-  margin-left: 1rem;
-  font-size: 1rem;
 }
 
 h1 {
@@ -284,144 +276,5 @@ button:hover {
   a[href]::after {
     content: " (" attr(href) ")";
     font-size: 0.9em;
-  }
-}
-
-/* Hide the checkbox by default */
-#menu-toggle {
-  display: none;
-}
-
-/* Hamburger menu button */
-.hamburger {
-  /* display: none; */
-  position: fixed;
-  right: 1rem;
-  top: 1rem;
-  cursor: pointer;
-  flex-direction: column;
-  width: 30px;
-  height: 25px;
-  justify-content: space-between;
-  z-index: 5;
-  outline: none; /* Remove focus outline */
-  -webkit-tap-highlight-color: transparent; /* Remove blue highlight on mobile */
-}
-
-.hamburger div {
-  background: var(--text);
-  height: 4px;
-  width: 100%;
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
-/* Show the menu when checkbox is checked */
-#menu-toggle:checked ~ .menu {
-  transform: translateY(0);
-}
-
-/* Styling for menu links */
-.menu a {
-  color: var(--background);
-  font-size: 1.5rem;
-  margin: 1rem 0;
-  text-decoration: none;
-}
-
-/* Transform to "X" when menu is open */
-#menu-toggle:checked + .hamburger .bar1 {
-  transform: translate(0px, 10.5px) rotate(45deg);
-  /* transform: rotate(45deg); */
-  background-color: var(--background);
-}
-
-#menu-toggle:checked + .hamburger .bar2 {
-  opacity: 0;
-}
-
-#menu-toggle:checked + .hamburger .bar3 {
-  transform: translate(0px, -10.5px) rotate(-45deg);
-  background-color: var(--background);
-}
-
-/* Full-screen menu overlay for mobile screens */
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  display: none; /* Hide by default on small screens */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s ease; /* Smooth fade in */
-  opacity: 0;
-  transform: translateY(0); /* Reset any translate */
-  outline: none; /* Remove focus outline */
-  -webkit-tap-highlight-color: transparent; /* Remove blue highlight on mobile */
-}
-
-/* Show the menu when checkbox is checked */
-#menu-toggle:checked ~ .menu {
-  display: flex; /* Show menu on smaller screens */
-  opacity: 1; /* Fade in */
-}
-
-/* Large screen layout */
-@media (min-width: 768px) {
-  nav {
-    position: sticky;
-    justify-self: start; /* Align horizontally at the start */
-    align-self: start;
-  }
-
-  body {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    width: 100%;
-  }
-
-  main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .menu {
-    height: auto;
-    width: fit-content;
-    position: static; /* Reset position */
-    display: flex; /* Show menu as a row */
-    flex-direction: column; /* Horizontal layout */
-    align-items: end;
-    justify-content: center;
-    background: none; /* Remove background */
-    color: #333;
-    opacity: 1; /* Ensure full opacity */
-    transform: none; /* Reset any transform */
-  }
-
-  /* Adjust menu link styles for large screens */
-  .menu a {
-    font-size: 1rem;
-    color: #333;
-    margin: 0;
-    margin-left: 1rem;
-  }
-
-  /* Hide the hamburger menu on large screens */
-  .hamburger {
-    display: none;
-  }
-}
-
-/* Display the hamburger menu on smaller screens */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
   }
 }
