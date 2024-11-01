@@ -12,14 +12,7 @@
       <link>//localhost:1313/recs/books/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/recs/books/</guid>
-      <description>&lt;p&gt;Book recommendations.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;The Art of Doing Science and Engineering&lt;/em&gt; by Richard Hamming&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Poor Charlie&amp;rsquo;s Almanack&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Podcasts and Talks</title>
-      <link>//localhost:1313/recs/podcasts-and-talks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/recs/podcasts-and-talks/</guid>
-      <description>&lt;p&gt;Under Construction&lt;/p&gt;</description>
+      <description>Fiction, Nonfiction, and Textbooks</description>
     </item>
     <item>
       <title>Sites</title>
@@ -27,6 +20,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/recs/sites/</guid>
       <description>&lt;p&gt;Websites of interest.&lt;/p&gt;&#xA;&lt;h2 id=&#34;blogs--essays&#34;&gt;Blogs / Essays&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://paulgraham.com/articles.html&#34;&gt;Paul Graham&amp;rsquo;s Essays&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://patrickcollison.com/&#34;&gt;Patrick Collison&amp;rsquo;s Site&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;misc&#34;&gt;Misc.&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://jfly.uni-koeln.de/color/&#34;&gt;A good categorical palate&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Talks</title>
+      <link>//localhost:1313/recs/podcasts-and-talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/recs/podcasts-and-talks/</guid>
+      <description>Podcasts, Lectures, and Talks</description>
     </item>
   </channel>
 </rss>

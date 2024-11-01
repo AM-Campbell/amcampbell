@@ -1,5 +1,6 @@
 ---
-title: Podcasts and Talks
+title: Talks
+summary: "Podcasts, Lectures, and Talks"
 ---
 
 Under Construction

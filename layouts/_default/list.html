@@ -1,9 +1,8 @@
 {{ define "content" }}
 <h1>{{ .Title }}</h1>
-{{ range .Pages }}
+{{ .Content }} {{ range .Pages }}
 <article>
-    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-    {{ .Summary }}
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  {{ .Summary | safeHTML }}
 </article>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}

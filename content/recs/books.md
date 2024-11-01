@@ -1,8 +1,9 @@
 ---
 title: Books
+summary: "Fiction, Nonfiction, and Textbooks"
 ---
 
 Book recommendations.
 
-- *The Art of Doing Science and Engineering* by Richard Hamming
-- *Poor Charlie's Almanack*
+- _The Art of Doing Science and Engineering_ by Richard Hamming
+- _Poor Charlie's Almanack_
