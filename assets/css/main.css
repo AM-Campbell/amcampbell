@@ -267,7 +267,7 @@ button:hover {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 14.5px;
   }
 
   h1,
@@ -365,7 +365,7 @@ button:hover {
 /* Styling for menu links */
 .menu a {
   color: var(--background);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 1rem 0;
   text-decoration: none;
 }
