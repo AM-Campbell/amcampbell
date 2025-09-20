@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amcampbell</title>
+    <script>
+    (function() {
+      // Check for saved theme or system preference immediately
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+      const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+    
+      // Apply theme attribute immediately to prevent flash
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body style="">
+    <header>
+        <nav>
+            <!-- Your navigation -->
+        </nav>
+    </header>
+    
+    <main>
+        <h1>A. M. Campbell</h1>
+<p>I like statistics, medicine, computing, and rationality. Currently quantifying how hospitals' patterns of care change over time for cancer patients at the end of life. Interested in tools for thought and spaced repetition memory systems.</p>
+<hr>
+<p>I'm also on <a href="https://github.com/AM-Campbell">GitHub</a>.</p>
+
+    </main>
+    
+    <footer>
+        <!-- Your footer -->
+    </footer>
+    <script src="/scripts/darkmode.js"></script>
+</body>
+</html>

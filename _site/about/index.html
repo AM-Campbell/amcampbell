@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amcampbell</title>
+    <script>
+    (function() {
+      // Check for saved theme or system preference immediately
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+      const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+    
+      // Apply theme attribute immediately to prevent flash
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body style="">
+    <header>
+        <nav>
+            <!-- Your navigation -->
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Bio</h1>
+
+    </main>
+    
+    <footer>
+        <!-- Your footer -->
+    </footer>
+    <script src="/scripts/darkmode.js"></script>
+</body>
+</html>
